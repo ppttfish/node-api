@@ -1,9 +1,9 @@
 const http = require('http')
 const serverHandle = require('../app')
-const port = process.env.PORT || config.port
+const port = process.env.PORT || 5000
 
 const server = http.createServer(serverHandle)
 
 server.listen(port, function(){
-  console.log(`${pkg.name} listening on port ${port}`)
+  console.log(`listening on port ${port}`)
 })
